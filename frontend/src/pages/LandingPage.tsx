@@ -21,6 +21,7 @@ import {
   Activity,
   Layers
 } from 'lucide-react';
+import { BrandLogo } from '../components/common/BrandLogo';
 
 export const LandingPage: React.FC = () => {
   const navigate = useNavigate();
@@ -88,8 +89,8 @@ export const LandingPage: React.FC = () => {
       {/* Top Header */}
       <header className="h-16 border-b border-[var(--border)] bg-[var(--surface)] px-6 lg:px-12 flex items-center justify-between sticky top-0 z-40 backdrop-blur-md">
         <div className="flex items-center gap-3">
-          <div className="w-9 h-9 rounded-2xl bg-[var(--brand)] text-[var(--bg)] flex items-center justify-center font-bold text-sm shadow-xs">
-            CS
+          <div className="w-10 h-10 rounded-xl bg-[var(--surface-raised)] border border-[var(--border)] flex items-center justify-center p-1.5 shadow-xs">
+            <BrandLogo size={28} />
           </div>
           <div>
             <span className="font-bold text-sm tracking-wide text-[var(--text)] block">

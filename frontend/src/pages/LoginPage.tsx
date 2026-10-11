@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useAppStore } from '../store/appStore';
 import { UserRole } from '../types';
 import { ShieldCheck, Flame, ArrowRight, Globe, Lock, Phone } from 'lucide-react';
+import { BrandLogo } from '../components/common/BrandLogo';
 
 export const LoginPage: React.FC = () => {
   const navigate = useNavigate();
@@ -32,7 +33,7 @@ export const LoginPage: React.FC = () => {
           {/* Header & Language Toggle */}
           <div className="flex items-center justify-between pb-6 border-b border-[var(--border)]">
             <div className="flex items-center gap-2">
-              <span className="w-2.5 h-2.5 rounded-[2px] bg-[var(--brand)]" />
+              <BrandLogo size={20} className="shrink-0" />
               <span className="font-semibold text-xs tracking-wider uppercase text-[var(--text)]">
                 CLIMA-SHIELD
               </span>

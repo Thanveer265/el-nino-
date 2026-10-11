@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useAppStore } from '../../store/appStore';
 import { DEMO_REGIONS } from '../../data/demoData';
 import { Search, Sun, Moon, Laptop, ChevronDown, Activity, Globe } from 'lucide-react';
+import { BrandLogo } from '../common/BrandLogo';
 
 export const TopBar: React.FC = () => {
   const navigate = useNavigate();
@@ -30,7 +31,7 @@ export const TopBar: React.FC = () => {
           onClick={() => navigate('/command-center')}
           className="flex items-center gap-2 cursor-pointer focus:outline-none group"
         >
-          <span className="w-2.5 h-2.5 rounded-[2px] bg-[var(--brand)] shrink-0 transition-transform group-hover:scale-110" />
+          <BrandLogo size={20} className="shrink-0" />
           <span className="font-semibold text-xs tracking-wider uppercase text-[var(--text)] whitespace-nowrap">
             CLIMA-SHIELD
           </span>
